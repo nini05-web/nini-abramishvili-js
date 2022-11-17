@@ -1,10 +1,12 @@
+
+
 // burger bar
-let navigation=document.getElementById("nav-bar")
-let burgerBar=document.getElementById("burger-Bar")
+let navigation=document.getElementById("nav-bar");
+let burgerBar=document.getElementById("burger-Bar");
 
 burgerBar.addEventListener("click", function () {
-    navigation.classList.toggle("toggle")
-    burgerBar.classList.toggle("activeBar")
+    navigation.classList.toggle("toggle");
+    burgerBar.classList.toggle("activeBar");
   });
   
   let input = document.querySelector(".input-form");
@@ -20,8 +22,8 @@ burgerBar.addEventListener("click", function () {
     
     let li = document.createElement("li");
   
-    let btnDelete = document.createElement("i");
-    btnDelete.innerHTML = <i class="fa-solid fa-trash"></i>
+    let btnDelete = document.createElement("button");
+    btnDelete.innerHTML = "delete this item";
     btnDelete.addEventListener("click", function () {
       li.remove();
     });
